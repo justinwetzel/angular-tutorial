@@ -1,0 +1,12 @@
+<h2>List of Adoptable Shiba Inus</h2>
+<div class="row">
+    <div class="col-xs-10">
+        <app-adoptable-shiba-edit></app-adoptable-shiba-edit>
+        <hr>
+        <ul class="list-group">
+            <a class="list-group-item" style="cursor: pointer" *ngFor="let shiba of adoptableShibas">
+                <b>Name:</b> {{ shiba.name }} <b>Age:</b> {{ shiba.age }} <b>Gender:</b> {{ shiba.gender }}
+            </a>
+        </ul>
+    </div>
+</div>
